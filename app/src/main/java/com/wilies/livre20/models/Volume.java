@@ -1,8 +1,19 @@
 package com.wilies.livre20.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Volume {
+    @SerializedName("kind")
+    @Expose
     private String kind;
+
+    @SerializedName("id")
+    @Expose
     private String id;
+
+    @SerializedName("volumeInfo")
+    @Expose
     private VolumeInfo volumeInfo;
 
     public String getKind() {

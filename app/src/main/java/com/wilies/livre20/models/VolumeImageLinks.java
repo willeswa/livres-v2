@@ -1,22 +1,38 @@
 package com.wilies.livre20.models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class VolumeImageLinks {
-    private String small;
-    private String large;
+    @SerializedName("smallThumbnail")
+    @Expose
+    private String smallThumbnail;
+
+    @SerializedName("thumbnail")
+    @Expose
+    private String thumbnail;
 
     public String getSmall() {
-        return small;
+        return smallThumbnail;
     }
 
     public void setSmall(String small) {
-        this.small = small;
+        this.smallThumbnail = small;
     }
 
-    public String getLarge() {
-        return large;
+    public String getThumbnail() {
+        return thumbnail;
     }
 
-    public void setLarge(String large) {
-        this.large = large;
+    public void setThumbnail(String thumbnail) {
+        this.thumbnail = thumbnail;
+    }
+
+    @Override
+    public String toString() {
+        return "VolumeImageLinks{" +
+                "small='" + smallThumbnail + '\'' +
+                ", large='" + thumbnail + '\'' +
+                '}';
     }
 }
