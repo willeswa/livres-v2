@@ -16,7 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Repository {
     private static final String BOOK_SEARCH_BASE_URL = "https://www.googleapis.com/";
-    private static final String KEY = "AIzaSyDZZZLSxYB-MCxAmXQFwCY6tBnpwQ0rGoM";
+    private static final String KEY = "GOOGLE_API_KEY";
     private String searchTerm = "Key";
 
     private WebService webService;
